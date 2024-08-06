@@ -1,0 +1,331 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+\newcounter {sectioicolsn}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-01}
+\author{EE24BTECH11036 - KRISHNA PATIL}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\textbf{SECTION B : JEE MAINS / AIEEE}
+\hfill
+
+\begin{enumerate}
+
+\item Two common tangents to the circle {$ x^2+y^2=2a^2 $} and parabola {$ y^2 = 8ax $} are \hfill{[2002]}
+
+
+\begin{enumerate}[label=(\alph*)]
+\begin{multicols}{2}
+
+\item  {$ x = \pm { \brak{y+2a}} $}
+\item  {$ y = \pm { \brak{x+2a}} $}
+\item  {$ x = \pm { \brak{y+a}} $}
+\item  {$ y = \pm { \brak{x+a}} $}
+
+\end{multicols}
+\end{enumerate}
+
+\hfill
+
+\item The normal at a point {$ \brak{bt_1^2 ,2bt_1} $} on a parabola meets the parabola again in the point {$ \brak{bt_2^2 ,2bt _2} $}  ,then \hfill {[2003]}
+
+
+\begin{enumerate}[label=(\alph*)]
+\begin{multicols}{2}
+
+\item  {$ t_2 = t_1 + \frac{2}{t_1} $}
+\item  {$ t_2 = -t_1 - \frac{2}{t_1} $}
+\item  {$ t_2 = -t_1 + \frac{2}{t_1} $}
+\item  {$ t_2 = t_1 - \frac{2}{t_1} $}
+
+\end{multicols}
+\end{enumerate}
+
+\hfill
+
+\item The foci of the ellipse {$ \frac{x^2}{16} + \frac{y^2}{b} $} and the hyperbola {$ \frac{x^2}{144} - \frac{y^2}{81} = \frac{1}{25} $} coincide. Then the value of {$ b^2 $} is 
+
+\hfill
+\hfill {[2003]}
+
+	
+\begin{enumerate}[label=(\alph*)]
+\begin{multicols}{2}
+
+\item 9	
+\item 1
+\item 5
+\item 7
+
+\end{multicols}
+\end{enumerate}
+
+
+\hfill
+
+\item If a $ \neq 0 $ and the line {$ 2bx +3cy + 4d = 0 $} passes through the points of intersection of the parabolas {$ y^2 = 4ax $} and {$  x^2 = 4ay $} , then 
+
+\hfill
+\hfill{[2004]}
+
+\begin{enumerate}[label=(\alph*)]
+\begin{multicols}{2}
+
+\item {$ d^2 + \brak{3b-2c}^2 = 0 $}
+\item {$ d^2 + \brak{3b+2c}^2 = 0 $}
+\item {$ d^2 + \brak{2b-3c}^2 = 0 $}
+\item {$ d^2 + \brak{2b+3c}^2 = 0 $}
+
+\end{multicols}
+\end{enumerate}
+
+\hfill
+
+\item The eccentricity of an ellipse, with its centre at the origin, is {$ \frac{1}{2} $} {$ \cdot $} If one of the directrices is {$ x = 4 $}, then the equation of the ellipse is: \hfill{[2004]}
+
+\begin{enumerate}[label=(\alph*)]
+\begin{multicols}{2}
+
+\item {$ 4x^2+3y^2 = 1 $}
+\item {$ 3x^2+4y^2 = 12 $}
+\item {$ 4x^2+3y^2 = 12 $}
+\item {$ 3x^2+4y^2 = 1 $}
+
+\end{multicols}
+\end{enumerate}
+
+\hfill 
+
+\item Let P be the point {$ \brak{1,0} $} and Q a point on the locus {$ y^2 = 8x $} The locus of mid point of PQ is \hfill{[2005]}
+
+\begin{enumerate}[label=(\alph*)]
+\begin{multicols}{2}
+
+\item{$ y^2-4x=2 $}
+\item{$ y^2+4x=2 $}
+\item{$ x^2+4y=2 $}
+\item{$ x^2-4y=2 $}
+
+\end{multicols}
+\end{enumerate}
+
+\hfill
+
+\item The locus of a point P {$ \brak{\alpha,\beta} $} moving under the condition that the line {$ y = \alpha x + \beta $} is a tangent to the hyperbola {$ \frac{x^2}{a^2} - \frac{y^2}{b^2} $} is \hfill{[2005]}
+
+\begin{enumerate}[label=(\alph*)]
+\begin{multicols}{2}
+
+\item an ellipse
+\item a circle
+\item a parabola
+\item a hyperbola
+
+\end{multicols}
+\end{enumerate}
+
+\hfill
+
+\item An ellipse has OB as semi minor axis, F and F' focii and the angle FBF' is a right angle {$ \cdot $} Then the eccentricity of the ellipse is
+
+\hfill
+\hfill{[2005]}
+
+\begin{enumerate}[label=(\alph*)]
+\begin{multicols}{2}
+
+\item {$ \frac{1}{\sqrt2} $}
+\item {$ \frac{1}{2} $}
+\item {$ \frac{1}{4} $}
+\item {$ \frac{1}{\sqrt3} $}
+
+\end{multicols}
+\end{enumerate}
+
+\hfill
+
+\item The locus of the vertices of the family of parabolas {$ y = \frac{a^3 x^2}{3} + \frac{a^2 x}{2} - 2a  $} is 
+
+\hfill{[2006]}
+
+\begin{enumerate}[label=(\alph*)]	
+\begin{multicols}{2}
+
+\item {$ xy = \frac{105}{64} $}
+\item {$ xy = \frac{3}{4} $}
+\item {$ xy = \frac{35}{16} $}
+\item {$ xy = \frac{64}{104} $}
+
+\end{multicols}
+\end{enumerate}
+
+\hfill
+
+\item In an ellipse, the distance between its foci is 6 and minor axis is 8. Then it's eccentricity is
+
+\hfill
+\hfill{[2006]}
+
+\begin{enumerate}[label=(\alph*)]
+\begin{multicols}{2}
+
+\item {$ \frac{3}{5} $}
+\item {$ \frac{1}{2} $}
+\item {$ \frac{4}{5} $}
+\item {$ \frac{1}{\sqrt5} $}
+
+\end{multicols}
+\end{enumerate}
+
+\hfill
+
+\item Angle between the tangents to the curve {$ y = x^2 -5x + 6 $} at the points {$ \brak{2,0} $} and {$ \brak{3,0} $} is
+
+\hfill
+\hfill{[2006]}
+
+
+\begin{enumerate}[label=(\alph*)]
+\begin{multicols}{2}
+
+\item {$ {\pi} $}
+\item {$ \frac{\pi}{2} $}
+\item {$ \frac{\pi}{6} $}
+\item {$ \frac{\pi}{4} $}
+
+\end{multicols}
+\end{enumerate}
+
+\hfill
+
+\item For the Hyperbola {$ \frac{x^2}{cos^2 \alpha} - \frac{y^2}{sin^2 \alpha} = 1 $} , which of the  following remains constant when {$ \alpha $} varies = ? 
+
+\hfill
+\hfill{[2007]}
+
+\begin{enumerate}[label=(\alph*)]
+
+	
+\item abscissae of vertices 
+\item abscissae of foci
+\item eccentricity
+\item directrix
+
+
+\end{enumerate}
+
+\hfill
+
+
+\item The equation of a tangent to the parabola {$ y^2 = 8x $} is {$ y = x + 2 $} {$ \cdot $}  The point on this line from which the other tangent to the parabola is perpendicular to the given tangent is
+
+\hfill 
+\hfill{[2007]}
+
+\begin{enumerate}[label=(\alph*)]
+\begin{multicols}{2}
+
+\item {$ \brak{2,4} $}
+\item {$ \brak{-2,0} $}
+\item {$ \brak{-1,1} $}
+\item {$ \brak{0,2} $}
+
+\end{multicols}
+\end{enumerate}
+
+\hfill
+
+\item The normal to a curve at P{$ \brak{x, y} $} meets the x-axis at G {$ \cdot $} If the distance of G from the origin is twice the abscissa of P , then the curve is \hfill {[2007]}
+
+\begin{enumerate}[label=(\alph*)]
+\begin{multicols}{2}
+
+\item circle
+\item hyperbola
+\item ellipse
+\item parabola
+
+\end{multicols}
+\end{enumerate}
+
+\hfill
+
+\item  A focus of an ellipse is at the origin {$ \cdot $} The directrix is the line {$ x = 4 $}and the eccentricity is {$ \frac{1}{2} $} {$ \cdot $} Then the length of the semi-major axis is 
+
+\hfill
+\hfill {[2008]}
+
+\begin{enumerate}[label=(\alph*)]
+\begin{multicols}{2}
+
+\item {$ \frac{8}{3} $}
+\item {$ \frac{2}{3} $}
+\item {$ \frac{4}{3} $}
+\item {$ \frac{5}{3} $}
+
+\end{multicols}	
+\end{enumerate}
+
+\hfill
+
+
+
+\end{enumerate}
+\end{document}
