@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.19)  28 AUG 2024 12:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.19)  3 SEP 2024 21:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1658,13 +1658,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 3
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 39.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 39.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1855,6 +1855,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 39.
 LaTeX Info: Redefining \pageref on input line 39.
 LaTeX Info: Redefining \nameref on input line 39.
+
+(./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -1899,30 +1901,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--71
 
  []
 
-<figures/Scatter Plot.jpg, id=31, 642.4pt x 444.66125pt>
-File: figures/Scatter Plot.jpg Graphic file (type jpg)
-<use figures/Scatter Plot.jpg>
-Package pdftex.def Info: figures/Scatter Plot.jpg  used on input line 79.
-(pdftex.def)             Requested size: 218.5194pt x 151.25745pt.
+<figures/Figure_1.png, id=31, 578.16pt x 406.8801pt>
+File: figures/Figure_1.png Graphic file (type png)
+<use figures/Figure_1.png>
+Package pdftex.def Info: figures/Figure_1.png  used on input line 79.
+(pdftex.def)             Requested size: 218.5194pt x 153.7779pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <./figures/Scatter Plot.jpg>] (./main.aux)
+ <./figures/Figure_1.png>] (./main.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49695 strings out of 478287
- 1162647 string characters out of 5849289
- 1627227 words of memory out of 5000000
+ 49701 strings out of 478287
+ 1162671 string characters out of 5849289
+ 1627484 words of memory out of 5000000
  67081 multiletter control sequences out of 15000+600000
  533097 words of font info for 159 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1932,10 +1928,10 @@ e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (1 page, 71902 bytes).
+Output written on main.pdf (1 page, 57439 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 78 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
