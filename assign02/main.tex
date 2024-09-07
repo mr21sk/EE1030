@@ -56,27 +56,28 @@
 \numberwithin{equation}{enumi}
 \numberwithin{figure}{enumi}
 \renewcommand{\thetable}{\theenumi}
-
-\textbf { Question :- } \\
+\parindent 0px 
+\textbf{Question :-} \\ 
  In which quadrant or on which axis do each of the points {$ \brak{-2,4 }$}, {$ \brak{3,-1} $}, {$ \brak{-1,0} $}, {$ \brak{1,2} $} and {$ \brak{-3,-5} $} lie ? Verify your answer by locating them on the Cartesian plane. \\ \\
-\textbf { Solution :- } \\
-To determine if point lies in a quadrant , we look at the the signs of the x and y coordinates.
+\solution \\
+To determine if point lies in a quadrant , we look at the the signs of the x and y coordinates as shown in the table \ref{tab1-1.2-28}. \\
 \begin{table}[h!]    
   \centering
-  \input{tables/table.tex}
+  \input{table1.tex}
   \caption{Quadrant Decider}
   \label{tab1-1.2-28}
+\end{table} \\
+So referring to \figref{x-yplot} , the table \ref{ANSWERTABLE} gives the answers.
+\begin{table}[h!]    
+  \centering
+  \input{table2.tex}
+  \caption{Answers}
+  \label{ANSWERTABLE}
 \end{table}
-\begin{enumerate}
-\item {$ \vec A $} = (-2,4) lies in second quadrant.
-\item {$ \vec B $} = (3,-1)  lies in fourth quadrant.
-\item {$ \vec C $} = (-1,0) lies on the x axis.
-\item {$ \vec D $} = (1,2) lies in the first quadrant.
-\item {$ \vec E $} = (-3,-5) lies in the third quadrant.
-\end {enumerate} 
 \begin{figure}[h!]
-   \centering
-   \includegraphics[width=0.6\linewidth]{figures/Figure_1.png}
+   \parindent 0px
+   \includegraphics[width=1.0\linewidth]{Figure_1.png}
+   \caption{X-Y plot}
    \label{x-yplot}
 \end{figure}
 \end{document}
