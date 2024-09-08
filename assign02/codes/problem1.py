@@ -19,7 +19,6 @@ def plot_points(x, y):
         plt.text(x_i, y_i, f"({x_i:.2f}, {y_i:.2f})")
     plt.xlabel('X Axis')
     plt.ylabel('Y Axis')
-    plt.title('2D Plot of Points')
     plt.axhline(0, color='red',linewidth=0.5)
     plt.axvline(0, color='red',linewidth=0.5)
     plt.grid(True)
