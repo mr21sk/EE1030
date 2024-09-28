@@ -51,23 +51,22 @@ Question:\\
 Find the unit vector in the direction of the vector  $\vec{A}$ = \myvec{1\\1\\2}. 
 \\ \\
 \solution
+The unit vector is given by :-
+\begin{align}
+	\frac{A}{\norm{A}}
+\end{align}
+\begin{align}
+	\norm{A} &= \sqrt{(A)^T(A)}\\
+	&= \sqrt{\myvec{1 & 1 & 2}\myvec{1\\1\\2}}\\
+	&= \sqrt{6} 
+\end{align}
+\\ \\
+\centering
+\therefore \frac{A}{\norm{A}} = \frac{1}{\sqrt{6}} $\myvec{1\\1\\2}$ \\
 \begin{table}[h!]    
   \centering
   \input{tables/table.tex}
   \caption{Given Vector}
   \label{tab1-1.9-6}
-\end{table}\\
-The unit vector is given by :-
-\begin{align}
-	\frac{\vec{A}}{\norm{\vec{A}}}
-\end{align}
-\begin{align}
-	\norm{\vec{A}} &= \sqrt{(\vec{A})^T(\vec{A})}\\
-	&= \sqrt{\myvec{1 & 1 & 2}\myvec{1\\1\\2}}\\
-	&= \sqrt{6} 
-\end{align}
-\\ \\
-$\therefore$ the unit vector in the direction of $\vec{A}$ is \\ \\
-\centering
-$\frac{\vec{A}}{\norm{\vec{A}}} = \sqrt{6} \myvec{1\\1\\2}$ \\
+\end{table}
 \end{document}
