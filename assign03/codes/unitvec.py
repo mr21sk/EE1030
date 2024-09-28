@@ -2,7 +2,7 @@ import ctypes
 import numpy as np
 
 # Load the shared library
-vector_lib = ctypes.CDLL('./vector.so')
+vector_lib = ctypes.CDLL('./funcs.so')
 
 # Define the function argument and return types
 vector_lib.calculate_unit_vector.argtypes = (ctypes.POINTER(ctypes.c_double), ctypes.POINTER(ctypes.c_double), ctypes.c_int)
