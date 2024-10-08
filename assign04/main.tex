@@ -50,20 +50,35 @@
 Question: \\
  Find the area of the region bounded by the ellipse $ \frac{x^2}{4} + \frac{y^2}{9} = 1 $ . 
  \\ \\
-\solution \\
-using standard equation of ellipse , $ a = 2 $ , $ b = 3 $ 
-\\
-Area of ellipse is given by :
+\solution \\ \\
+Equation of a conic in matrix form is : \\
 \begin{align}
-                     \pi a b  \\
-        \therefore area   &=  \pi \cdot 2 \cdot 3 \\
-                          &= 6 \pi 
+    x^\top V x + 2u^\top {x} + f = 0
+\end{align} \\ 
+For given ellipse, \\
+\begin{align}
+    V&= \myvec{\frac{4}{9} & 0 \\ 0 & 1} \\
+    u&= \myvec{0 \\ 0} \\
+    f&=-1 
 \end{align}
-\begin{figure}[h!]
-   \parindent 1px
-	\centering
-	\includegraphics[width=1.0\linewidth]{figs/Figure_1.png}
-   \caption{X-Y plot}
-   \label{xandyplot}
-\end{figure} 
+$ \therefore $ Area of the ellipse is  
+\begin{align}
+    A &= 4 \int_{0}^{2} 3 \sqrt{1 - \frac{x^2}{4}} \, dx\ \\
+    A &= 6\pi
+\end{align}
+\begin{table}[h!]    	
+    \centering
+    % Assuming the table.tex file exists
+    \input{tables/table.tex} 
+    \caption{Parameters Used}
+    \label{tab:1-1.9-6}
+\end{table}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width = 1\linewidth]{figs/Figure_1.png}
+    \caption{Plot of ellipse}
+    \label{fig:stemplot}
+\end{figure}
+
 \end{document}
+
