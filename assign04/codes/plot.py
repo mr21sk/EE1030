@@ -21,32 +21,32 @@ covertices = [(2,0),(-2,0)]
 center = [(0,0)]
 plt.plot(x, y, label='Ellipse', color='blue')
 plt.scatter(*zip(*covertices),color ="red",label="vertices")
-plt.scatter(*zip(*vertices),color = "blue", label = "covertices")
+plt.scatter(*zip(*vertices),color = "green", label = "covertices")
 plt.scatter(*zip(*center),color="yellow",label = "center")
 plt.fill(x, y, color='lightblue', alpha=0.3)  # Fill the ellipse with color
 plt.xlabel('X-axis')
 
 # Plot vertices
 for vertex in vertices:
-    plt.plot(*vertex, 'ro')  # red points for vertices
+    plt.plot(*vertex, 'ro') 
     plt.text(vertex[0], vertex[1], f'{vertex}', fontsize=10, ha='left', color='red')
 
 # Plot co-vertices
 for covertex in covertices:
-    plt.plot(*covertex, 'go')  # green points for co-vertices
+    plt.plot(*covertex, 'go')  
     plt.text(covertex[0], covertex[1],f'{covertex}', fontsize=10, ha='left', color='green')
 
 # plot center point
 for center in center:    
-    plt.plot(*center, 'bo')  # blue point for the center
-    plt.text(center[0], center[1], f'{center}', fontsize=10, ha='right', color='blue')
+    plt.plot(*center, 'yo')  
+    plt.text(center[0], center[1], f'{center}', fontsize=10, ha='left', color='yellow')
 
 plt.ylabel('Y-axis')
-plt.axhline(0, color='gray', linewidth=0.5, linestyle='--')  # X-axis
-plt.axvline(0, color='gray', linewidth=0.5, linestyle='--')  # Y-axis
-plt.xlim(-5, 5)  # Set limits for x-axis
-plt.ylim(-4, 4)  # Set limits for y-axis
-plt.gca().set_aspect('equal', adjustable='box')  # Set equal scaling
+plt.axhline(0, color='gray', linewidth=0.5, linestyle='--')  
+plt.axvline(0, color='gray', linewidth=0.5, linestyle='--')  
+plt.xlim(-5, 5) 
+plt.ylim(-4, 4)  
+plt.gca().set_aspect('equal', adjustable='box')  
 plt.grid(True)
 plt.legend()
 plt.show()
