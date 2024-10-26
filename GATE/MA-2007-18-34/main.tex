@@ -1,0 +1,210 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{MA-2007-18-34}
+\author{EE24BTECH11036 - Krishna Patil}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}
+\setcounter{enumi}{17}
+\item Suppose $ y_p\brak{x}=x\cos\brak{2x} $ is a particular solution of $ y^{\prime\prime} + \alpha y = -4\sin\brak{2x} $ . Then the constant $\alpha$ equals
+\begin{enumerate}
+\begin{multicols}{2}
+\item $ -4 $
+\item $ -2 $
+\item $ 2 $
+\item $ 4 $
+\end{multicols}
+\end{enumerate}
+\item IF $ F\brak{s} = \tan^{-1}{s} + k $ is the Laplace transform of some function $ f\brak{t} $ , $ t \geq 0 $ , then $ k $ = 
+\begin{enumerate}
+\begin{multicols}{2}
+\item $ -\pi $
+\item $-\frac{\pi}{2} $ 
+\item $ 0 $
+\item $ \frac{\pi}{2} $
+\end{multicols}
+\end{enumerate}
+\item Let $ S = \cbrak{\brak{0,1,1},\brak{1,0,1},\brak{-1,2,1}} \subseteq \mathbb{R}^3 $ . Suppose $ \mathbb{R}^3 $ is endowed with the standard inner product $ \langle  , \rangle $ . Define $ M  = \cbrak{  x \in \mathbb{R}^3 : {\langle x,y \rangle} \forall x \in S } $ . Then the dimension of $ M $ is 
+\begin{enumerate}
+\begin{multicols}{2}
+\item $ 0 $
+\item $ 1 $ 
+\item $ 2 $
+\item $ 3 $
+\end{multicols}
+\end{enumerate}
+\item Let $X$ be an uncountable set and let
+$ \mathcal{T} = \cbrak{ U \subseteq X : U = \emptyset \text{ or } U^c \text{ is finite} } $.
+Then the topological space $\brak{X, \mathfrak{J}}$
+\begin{enumerate}
+\begin{multicols}{2}
+\item is separable
+\item is Hausdorff
+\item has a countable basis
+\item has a countable basis at each point
+\end{multicols}
+\end{enumerate}
+\item Suppose $\brak{X, \mathfrak{J}}$ is a topological space. Let $\cbrak{S_n}_{n \geq 1}$ be a sequence of subsets of $X$. Then
+\begin{enumerate}
+\begin{multicols}{2}
+\item $\brak{S_1 \cup S_2}^\circ = S_1^\circ \cup S_2^\circ$
+\item $\brak{ \bigcup_{n} S_n }^\circ = \bigcup_{n} S_n^\circ$
+\item $\overline{\bigcup_{n} S_n} = \bigcup_{n} \overline{S_n}$
+\item $\overline{S_1 \cup S_2} = \overline{S_1} \cup \overline{S_2}$
+\end{multicols}
+\end{enumerate}
+\item Let $(X, d)$ be a metric space. Consider the metric $p$ on $X$ defined by $$p\brak{x, y} = \min\cbrak{1, \frac{1}{2}d\brak{x, y}}, \quad x, y \in X.$$ Suppose $\mathfrak{J}_{1}$ and $\mathfrak{J}_{2}$ are topologies on $X$ defined by $d$ and $p$, respectively. Then
+\begin{enumerate}
+\begin{multicols}{2}
+\item  $\mathfrak{J}_{1}$ is a proper subset of $\mathfrak{J}_{2}$  
+\item  $\mathfrak{J}_{2}$ is a proper subset of $\mathfrak{J}_{1}$
+\item neither $\mathfrak{J}_{1} \subseteq \mathfrak{J}_{2}$ nor $\mathfrak{J}_{2} \subseteq \mathfrak{J}_{1}$ 
+\item $\mathfrak{J}_{1} = \mathfrak{J}_{2}$
+\end{multicols}
+\end{enumerate}
+\item A basis of $V = \cbrak{\brak{x, y, z, w} \in \mathbb{R}^4: x+y-z=0, y+z+w=0, 2x+y-3z-w=0}$ is
+\begin{enumerate}
+\begin{multicols}{2}
+\item $\cbrak{\brak{1, -1, 0, 0}, \brak{0, 1, 1, 1}, \brak{2, 1, -3, 1}}$
+\item $\cbrak{(1, -1, 0, 1)}$
+\item $\brak{(1, 0, 1, -1)}$ 
+\item $\cbrak{\brak{1, -1, 0, 1}, \brak{1, 0, 1, -1}}$
+\end{multicols}
+\end{enumerate}
+\item Consider $\mathbb{R}^{3}$ with the standard inner product. Let $ S=\cbrak{\brak{1,1,1}, \brak{2,-1,2}, \brak{1,-2,1}}$ For a subset $W$ of $\mathbb{R}^{3}$, let $L\brak{W}$ denote the linear span of $W$ in $\mathbb{R}^{3}$. Then an orthonormal set $T$ with $L\brak{S}=L\brak{T}$ is  
+\begin{enumerate}
+\begin{multicols}{2}
+\item \cbrak{ \frac{1}{\sqrt{3}}\brak{1,1,1}, \frac{1}{\sqrt{6}}\brak{1,-2,1} }
+\item \cbrak{ \brak{1,0,0}, \brak{0,1,0}, \brak{0,0,1} }
+\item \cbrak{ \frac{1}{\sqrt{3}}\brak{1,1,1}, \frac{1}{\sqrt{2}}\brak{1,-1,0} }
+\item \cbrak{ \frac{1}{\sqrt{3}}\brak{1,1,1}, \frac{1}{\sqrt{2}}\brak{0,1,-1} }
+\end{multicols}
+\end{enumerate}
+\item Let $A$ be a $3\times3$ matrix. Suppose that the eigenvalues of $A$ are $-1, 0, 1$ with respective eigenvectors $\brak{1, -1, 0}^{\prime}$ , $\brak{1, 1, -2}^{\prime}$ and $\brak{(1, 1, 1}^{\prime}$ . Then 6A equals
+\begin{enumerate}
+\begin{multicols}{2}
+\item \myvec{1 & -5 & 2 \\5 & -1 & 2 \\2 & 2 & 2 \\}
+\item \myvec{1 & 0 & 0 \\0 & -1 & 0 \\0 & 0 & 0 \\}
+\item \myvec{1 & 5 & 3 \\5 & 1 & 3 \\3 & 3 & 3 \\}
+\item \myvec{-3 & 9 & 0 \\9 & -3 & 0 \\0 & 0 & 6\\}
+\end{multicols}
+\end{enumerate}
+\item Let $T: \mathbb{R}^3 \rightarrow \mathbb{R}^3$ be a linear transformation defined by $T\brak{\brak{x, y, z}} = \brak{x + y - z, x + y + z, y - z}$.Then the matrix of the linear transformation $T$ with respect to the ordered basis $B = \cbrak{\brak{0, 1, 0}, \brak{0, 0, 1}, \brak{1, 0, 0}}$ of $\mathbb{R}^3$ is  
+\begin{enumerate}
+\begin{multicols}{2}
+\item \myvec{1 & 1 & -1 \\1 & 1 & 1 \\0 & 1 & -1 \\}
+\item \myvec{1 & 1 & 0 \\1 & 1 & 1 \\1 & 0 & -1 \\}
+\item \myvec{1 & 1 & 1 \\1 & -1 & 0 \\0 & 1 & -1 \\}
+\item \myvec{1 & -1 & 1 \\1 & 1 & 1 \\1 & 1 & 0 \\}
+\end{multicols}
+\end{enumerate}
+\item Let $Y\brak{x} = \brak{y_1\brak{x}, y_2\brak{x}}^T$ and let \\ \begin{center}$A = \myvec{-3 & 1 \\k & -1}$ \end{center}Further, let $S$ be the set of values of $k$ for which all the solutions of the system of equations $Y^{\prime}\brak{x} = A Y\brak{x}$ tend to zero as $x \rightarrow \infty$. Then $S$ is given by
+\begin{enumerate}
+\begin{multicols}{2}
+\item $\cbrak{k: k \leq -1}$
+\item $\cbrak{k: k \leq 3}$
+\item $\cbrak{k: k < -1}$
+\item $\cbrak{k: k < 3}$
+\end{multicols}
+\end{enumerate}
+\item Let $u\brak{x, y} = f\brak{xe^y} + g\brak{y^2 \cos y}$,where $f$ and $g$ are infinitely differentiable functions. Then the partial differential equation of minimum order satisfied by $u$ is
+\begin{enumerate}
+\begin{multicols}{2}
+\item  $ u_{xy} + xu_{xx} = xu_x $
+\item $ u_{xx} + xu_{xx} = u_x $
+\item $ u_{yy} - xu_{xy} = u_x $
+\item $ u_{yy} - xu_{xx} = xu_x $
+\end{multicols}
+\end{enumerate}
+\item Let  C  be the boundary of the triangle formed by the points  (1,0,0), (0,1,0), (0,0,1).Then the value of the line integral  \begin{center} $ \oint_C (-2y)dx + (3x-4y^2)dy + (z^2+3y)dz $ \end{center} is
+\begin{enumerate}
+\begin{multicols}{2}
+\item $ 0 $
+\item $ 1 $
+\item $ 2 $
+\item $ 4 $
+\end{multicols}
+\end{enumerate}
+\item Let $X$ be a complete metric space and let $E \subseteq X$. Consider the following statements: \\
+(S$_1$) $E$ is compact, \\
+(S$_2$) $E$ is closed and bounded, \\
+(S$_3$) $E$ is closed and totally bounded, \\
+(S$_4$) Every sequence in $E$ has a subsequence converging in $E$. \\
+Which one of the above statements does NOT imply all the other statements?  
+\begin{enumerate}
+\begin{multicols}{2}
+\item $ S_1 $
+\item $ S_2 $
+\item $ S_3 $
+\item $ S_4 $
+\end{multicols}
+\end{enumerate}
+\item  Consider the series \begin{center} $\sum_{n=1}^{\infty} \frac{1}{n^{3/2}} \sin(nx).$ \end{center}  Then the series 
+\begin{enumerate}
+\item converges uniformly on  $\mathbb{R} $
+\item converges pointwise but NOT uniformly on % \mathbb{R} $$
+\item converges in  $L^1$ norm to an integrable function on  $\sbrak{0,2\pi}$ but does NOT converge uniformly on  $\mathbb{R}$ 
+\item does NOT converge pointwise
+\end{enumerate}
+\item Let  $f\brak{z}$ be an analytic function. Then the value of \begin{center} $\int_0^{2\pi} f\brak{e^{it}} \cos t .dt $ \end{center} equals
+\begin{enumerate}
+\begin{multicols}{2}
+\item $ 0 $
+\item $ 2\pi f\brak{0} $
+\item $ 2\pi f^{\prime}\brak{0} $
+\item $ \pi f^{\prime}\brak{0} $
+\end{multicols}
+\end{enumerate}
+\newpage
+\item Let $G_1$ and $G_2$ be the images of the disc  $\cbrak{z \in \mathbb{C} : \abs{z+1} < 1}$ under the transformations $w = \frac{\brak{1-i}z+2}{\brak{1+i}z+2}$  and $ w = \frac{\brak{1+i}z+2}{\brak{1-i}z+2}$, respectively. Then \\
+\begin{enumerate}
+\item $ G_1 = \cbrak{w \in \mathbb{C}: \text{Im}(w) < 0} \text{ and } G_2 = \cbrak{w \in \mathbb{C}: \text{Im}(w) > 0} $
+\item $ G_1 = \cbrak{w \in \mathbb{C}: \text{Im}(w) > 0} \text{ and } G_2 = \cbrak{w \in \mathbb{C}: \text{Im}(w) < 0} $
+\item $ G_1 = \cbrak{w \in \mathbb{C}: |w| > 2} \text{ and } G_2 = \cbrak{w \in \mathbb{C}: |w| < 2}  $
+\item $ G_1 = \cbrak{w \in \mathbb{C}: |w| < 2} \text{ and } G_2 = \cbrak{w \in \mathbb{C}: |w| > 2} $
+\end{enumerate}
+\end{enumerate}
+\end{document}      
