@@ -1,0 +1,175 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{CE-2013-1-13}
+\author{EE24BTECH11036 - Krishna Patil}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}
+\item There is no value of $x$ that can simultaneously satisfy both the given equations . Therefore , find the 'Least Squares error' solution to the two equations , i.e. , find the value of $x$ that minimizes the sum of squares of the errors in the two equations . \rule{2cm}{0.4pt}
+ \begin{center}
+     $2x=3$ \\ $4x=1$ \\
+ \end{center}
+\item What is the minimum number of multiplications involved in computing the matrix product $PQR$ ? Matrix $P$ has $4$ rows and $2$ columns ,  matrix $Q$ has $2$ rows and $4$ columns , and matrix $R$ has $4$ rows and $1$ column. \rule{2cm}{0.4pt} \\
+\item A $1-h$ rainfall of 10 cm magnitude at a station has a return period of $50$ years . The probablity that a $1-h$ rainfall of magnitude of $10$ cm or more will occur in each of two successive years is :  
+\begin{enumerate}
+\begin{multicols}{2}
+\item $ 0.04 $
+\item $ 0.2 $ 
+\item $ 0.02 $
+\item $ 0.0004 $
+\end{multicols}
+\end{enumerate}
+\item Maximum possible value of Compacting Factor for fresh \brak{\text{green}} concrete is:
+\begin{enumerate}
+\begin{multicols}{2}
+\item $0.5$
+\item $1.0$
+\item $1.5$
+\item $2.0$
+\end{multicols}
+\end{enumerate}
+\item As per is $800:2007$ , the cross-section in which the extreme fiber can reach the yield stress , but cannot develop the plastic moment of resistance due to failure by local buckling is classified as
+\begin{enumerate}
+\begin{multicols}{2}
+\item plastic section
+\item  compact section  
+\item semi-compact section
+\item slender section
+\end{multicols}
+\end{enumerate}
+\item the creep strains are 
+\begin{enumerate}
+\begin{multicols}{2}
+\item  caused due to dead load only  
+\item  caused due to live loads only 
+\item caused due to cyclic loads only 
+\item independent of loads 
+\end{multicols}
+\end{enumerate}
+\item As per IS $456:2000$ for $M20$ grade concrete and plain bars in tension, the design bond stress $\tau_{bd} = 1.2 $ , $\text{MPa}$ . Further, IS $456:2000$ permits this design bond stress value to be increased by $60\%$ for HSD bars. The stress in the HSD reinforcing steel bars in tension, $\sigma_s = 360$ , MPa . Find the required development length, $L_d$, for HSD bars in terms of the bar diameter, $\phi$. \rule{2cm}{0.4pt} \\
+\item The 'plane section remains plane' assumption in bending theory implies: 
+\begin{enumerate}
+\item strain profile is linear 
+\item stress profile is linear
+\item both stress and strain profiles are linear 
+\item shear deformations are neglected
+\end{enumerate}
+\item Two steel columns $P$ (length $L$ and yield strength $f_y = 250$ MPa) and Q (length $2L$ and yield strength $f_y = 500$)MPa have the same crossections and end-conditions . The ratio of buckling load of column $P$ to that of column $Q$ is: 
+\begin{enumerate}
+\begin{multicols}{2}
+\item $0.5$
+\item $1.0$
+\item $2.0$
+\item $4.0$
+\end{multicols}
+\end{enumerate}
+\item The pin-jointed 2-D truss is loaded with a horizontal force $15$ kN at joint $S$ and another $15$ kN vertical force at joint $U$ , as shown .Find the force in member $RS$ \brak{in \, \, kN} and report your answer taking trnsion as positive and compression as negative   . \rule{2cm}{0.4pt} \\ 
+\begin{figure}[!ht]
+\centering
+\resizebox{0.5\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (10,14.75) rectangle (13,12);
+\draw [short] (10,14.75) -- (13,12);
+\draw [short] (10,14.75) -- (7,12);
+\draw [short] (10,12) -- (7,12);
+\draw [short] (13,14.75) -- (16,12);
+\draw [short] (13,12) -- (16,12);
+\draw [short] (10,12) -- (10,10.25);
+\draw [short] (10,10.25) -- (9.5,9.75);
+\draw [short] (10,10.25) -- (10.5,9.75);
+\draw [short] (9.5,9.75) -- (10.5,9.75);
+\draw [short] (9.5,9.75) -- (9.25,9.5);
+\draw [short] (10,9.75) -- (9.75,9.5);
+\draw [short] (10.5,9.75) -- (10.25,9.5);
+\draw [short] (16,12) -- (15.5,11.5);
+\draw [short] (16,12) -- (16.5,11.5);
+\draw [short] (15.5,11.5) -- (16.5,11.5);
+\draw [short] (15.5,11.5) -- (15.25,11.25);
+\draw [short] (16,11.5) -- (15.75,11.25);
+\draw [short] (16.5,11.5) -- (16.25,11.25);
+\node [font=\normalsize] at (10,15) {R};
+\node [font=\normalsize] at (13,15) {S};
+\node [font=\normalsize] at (13.25,12.25) {U};
+\node [font=\normalsize] at (10.25,12.25) {V};
+\node [font=\normalsize] at (10.25,10.5) {W};
+\node [font=\normalsize] at (16.25,12.25) {T};
+\draw [->, >=Stealth] (13,12) -- (13,10.75)node[pos=0.5, fill=white]{15 kN};
+\draw [->, >=Stealth] (13,14.75) -- (14.5,14.75);
+\node [font=\normalsize] at (15,14.75) {15 kN};
+\node [font=\normalsize] at (6.75,12.25) {Q};
+\draw [<->, >=Stealth] (17,15) -- (17,12)node[pos=0.5, fill=white]{4m};
+\draw [<->, >=Stealth] (13,16) -- (15.75,16);
+\draw [<->, >=Stealth] (10,16) -- (13,16);
+\draw [<->, >=Stealth] (7,16) -- (10,16);
+\node [font=\normalsize] at (8.5,16.25) {4m};
+\node [font=\normalsize] at (11.5,16.25) {4m};
+\node [font=\normalsize] at (14.25,16.25) {4m};
+\draw [<->, >=Stealth] (7,12) -- (7,10);
+\node [font=\normalsize] at (6.5,11) {4m};
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+\item A symmetric I-section with (width of each flange = $10$ mm, depth of web = $100$ mm , and thickness of web = $10$ mm) of steel is subjected to a shear force of $100 kN$. Find the magnitude of the shear stress in N/mm$^2$ in the web at its junction with the top flange. \rule{2cm}{0.4pt} \\
+\item in its natural condition , a soil sample  has a mass of $1.980$ kg and a volume of $0.001$ m$^3$ . After being completely dried in an oven, the mass of the sample is $1.800$ kg . Specific gravity $G$ is $2.7$ . Unit weight of water is $10$ kN/m$^3$. The degree of saturation of the soil is:  
+\begin{enumerate}
+\begin{multicols}{2}
+\item  $ 0.65 $
+\item $ 0.70 $
+\item $ 0.54 $
+\item $ 0.61 $
+\end{multicols}
+\end{enumerate}
+\item The ratio of $N_f$/$N_d$ is known as shape factor , where $N_f$ is the number of flow lines and $N_d$ is the number of equipotential drops .  flow net is always drawn with a constant $b/a$ ratio , where $b$ and $a$ are distances between two consecutive flow lines and equipotential lines , respectively . Assuming that $b/a$ ratio remains the same, the shape factor of aflow net will change if the
+\begin{enumerate}
+\item upstream and downstream heads are interchanged
+\item soil in the flow space is changed 
+\item dimensions of the flow space are changed
+\item head difference causing the flow is changed  
+\end{enumerate}
+\end{enumerate}
+\end{document}      
