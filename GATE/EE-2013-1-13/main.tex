@@ -1,0 +1,273 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{CE-2013-1-13}
+\author{EE24BTECH11036 - Krishna Patil}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}
+\item In the circuit shown below What is the output voltage \brak{V_{out}} in Volts if a silicon transistor $Q$ and an ideal op-amp are used ? \\
+\begin{figure}[!ht]
+\centering
+\resizebox{0.6\textwidth}{!}{
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (12.75,14.25) node[op amp,scale=1] (opamp2) {};
+\draw (opamp2.+) to[short] (11.25,13.75);
+\draw  (opamp2.-) to[short] (11.25,14.75);
+\draw (13.95,14.25) to[short](14.25,14.25);
+\node at (11.25,14.75) [circ] {};
+\draw (9.25,14.75) to[R] (11.25,14.75);
+\draw (11.25,13.75) to[short] (11.25,12.25);
+\draw (11.25,12.25) to (11.25,11.75) node[ground]{};
+\draw (9.25,14.75) to[american voltage source] (9.25,12.5);
+\draw (9.25,12.5) to (9.25,11.75) node[ground]{};
+\draw (11.25,14.75) to[short] (11.25,17.25);
+\draw (11.25,17.25) to[short] (16.5,17.25);
+\draw (16.5,14.25) to[Tnpn, transistors/scale=1.19] (16.5,17.25);
+\draw (15.5,15.75) to (15.25,15.75) node[ground]{};
+\draw (14.25,14.25) to[short] (16.25,14.25);
+\draw (16.25,14.25) to[short, -o] (18.25,14.25) ;
+\draw (12.5,14.75) to[short, -o] (12.5,15.75) ;
+\draw (12.5,13.75) to[short, -o] (12.5,12.75) ;
+\node [font=\LARGE] at (19,14.25) {$V_{out}$};
+\node [font=\LARGE] at (16.75,15.75) {Q};
+\node [font=\LARGE] at (12.5,16.25) {+15V};
+\node [font=\LARGE] at (12.5,12.25) {-15V};
+\node [font=\LARGE] at (10,15.25) {1k$\Omega$};
+\node [font=\LARGE] at (8.25,13.5) {5V};
+\end{circuitikz}
+}
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+\begin{multicols}{2}
+\item $ -15 $
+\item $ -0.7 $ 
+\item $ +0.7 $
+\item $ +15 $
+\end{multicols}
+\end{enumerate}
+\item The transfer function $\frac{V_2 \brak{s}}{V_1 \brak{s}}$ of the circuit shown below is 
+\begin{figure}[!ht]
+\centering
+\resizebox{0.6\textwidth}{!}{
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (7.5,17.5) to[curved capacitor] (9,17.5);
+\draw (7.5,17.5) to[short, -o] (6.25,17.5) ;
+\draw (9,17.5) to[short] (10.75,17.5);
+\draw (10.75,17.5) to[R] (10.75,15.75);
+\draw (10.75,15.75) to[curved capacitor] (10.75,14.5);
+\draw (7,14.5) to[short, -o] (12.25,14.5) ;
+\draw (7,14.5) to[short, -o] (6.25,14.5) ;
+\draw (10.75,17.5) to[short, -o] (12.25,17.5) ;
+\node [font=\normalsize] at (8.40,18.1) {100${\mu}F$};
+\node [font=\normalsize] at (9.75,15) {100${\mu}F$};
+\node [font=\normalsize] at (10,16.5) {10k$\Omega$};
+\node [font=\normalsize] at (12.25,16) {$V_2\brak{s}$};
+\node [font=\normalsize] at (6.25,16) {$V_1\brak{s}$};
+\node [font=\large] at (6.25,17.25) {+};
+\node [font=\large] at (12.25,17.25) {+};
+\draw (12.25,14.75) to[short] (12.5,14.75);
+\draw (12,14.75) to[short] (12.5,14.75);
+\draw (6,14.75) to[short] (6.5,14.75);
+\end{circuitikz}
+}
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+\begin{multicols}{4}
+\item $ \frac{0.5s+1}{s+1} $
+\item $ \frac{0.6s+1}{s+2} $ 
+\item $ \frac{s+2}{s+1} $
+\item $ \frac{s+1}{s+2} $
+\end{multicols}
+\end{enumerate}
+\newpage
+\item Assuming zero initial condition , the response $y\brak{t}$ of the system given below to a unit step input $u\brak{t}$ is 
+\begin{figure}[!ht]
+\centering
+\resizebox{0.6\textwidth}{!}{
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (8.5,15.75) rectangle (12,14.25);
+\node [font=\normalsize] at (10.25,15) {$\frac{1}{s}$};
+\draw [->, >=Stealth] (7,15) -- (8.5,15);
+\draw [->, >=Stealth] (12,15) -- (13.5,15);
+\node [font=\normalsize] at (7.25,15.25) {$U\brak{s}$};
+\node [font=\normalsize] at (13.25,15.25) {$Y\brak{s}$};
+\end{circuitikz}
+}
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+\begin{multicols}{4}
+\item $ u\brak{t} $
+\item $ tu\brak{t} $ 
+\item $ \frac{t^2}{2}u\brak{t} $
+\item $ e^{-t}u\brak{t}$
+\end{multicols}
+\end{enumerate}
+\item The impulse pesponse of a system is $h\brak{t}=t \, \, u\brak{t}$ .For an input $u\brak{t-1}$ , the output is 
+\begin{enumerate}
+\begin{multicols}{4}
+\item $ \frac{t^2}{2}u\brak{t} $
+\item $ \frac{t\brak{t-1}}{2}u\brak{t-1} $
+\item $ \frac{(t-1)^2}{2}u\brak{t-1} $
+\item $ \frac{t^2 - 1}{2}u\brak{t-1} $
+\end{multicols}
+\end{enumerate}
+\item Which one of the following statements is NOT TRUE for a continous time casual and stable LTI system ? 
+\begin{enumerate}
+\item All the poles of the system must lie on the left side of the $j\omega$ axis.
+\item  Zeroes of the system can lie anywhere in the $s$ plane.
+\item All the poles must lie within $\abs{s}=1$.
+\item All the roots of the characteristic equation must be located on the left side of the $j\omega$ axis.
+\end{enumerate}
+\item Two systems with impulse reponses of $h_1\brak{t}$ and $h_2\brak{t}$ are connected in cascade . Then the overall impulse response of the cascaded system is given by
+\begin{enumerate}
+\item product of $h_1\brak{t}$ and $h_2\brak{t}$  
+\item sum of $h_1\brak{t}$ and $h_2\brak{t}$
+\item convolution of $h_1\brak{t}$ and $h_2\brak{t}$ 
+\item subtraction of $h_2\brak{t}$ and $h_1\brak{t}$ 
+\end{enumerate}
+\item A source of $V_s\brak{t}=V\cos{100\pi t}$ has a internal impedance of $\brak{4+3j}\Omega$.If a purely resistive load connected to this source has to extract the maximum power out of the source , its value in $\Omega$ should be 
+\begin{enumerate}
+\begin{multicols}{4}
+\item $3$ 
+\item $4$
+\item $5$ 
+\item $7$
+\end{multicols}
+\end{enumerate}
+\item A single-phase load is supplied by a single-phase voltage source . If the current flowing from the load to the source $10\angle -150^\circ $A and if the volatage at the load terminal is  $100\angle 60^\circ$V , then the
+\begin{enumerate}
+\item load absorbs real power and delivers reactive power. 
+\item load absorbs real power and absorbs reactive power.
+\item load delivers real power and delivers reactive power.
+\item load delivers real power and absorbs reactive power.
+\end{enumerate}
+\newpage
+\item A single-phase transformer has no-load loss of $64W$ as obtained from an open-circuit test.When a short-circuit test is performed on it with $90\%$ of the rated currents flowing in its both $LV$ and $HV$ windings , the measured loss is $81W$ . The transformer  has maximum efficiency when operated at 
+\begin{enumerate}
+\item $ 50.0\% $ of the rated current.
+\item $ 64.0\% $ of the rated current.
+\item $ 80.0\% $ of the rated current.
+\item $ 88.8\% $ of the rated current.
+\end{enumerate}
+\item The flux density at a point in space is given by $\mathbf{B} = 4x\mathbf{a_x} + 2k y\mathbf{a_y} + 8 \mathbf{a_z}\text{Wb/m}^2$. The value of constant $k$ must be equal to
+\begin{enumerate}
+\begin{multicols}{4}
+\item $-2$
+\item $-0.5$
+\item $+0.5$
+\item $+2$
+\end{multicols}
+\end{enumerate}
+\item A continuous random variable $X$ has a probability density function $f(x) = e^{-x}, \; 0 < x < \infty$. Then $P\cbrak{ X > 1 }$ is
+\begin{enumerate}
+\begin{multicols}{4}
+\item $0.368$
+\item $0.5$
+\item $0.632$
+\item $1.0$ 
+\end{multicols}
+\end{enumerate} 
+\item The curl of the gradient of the scalar field defined by $V = 2x^2 y + 3y^2 z + 4z^2 x$ is
+\begin{enumerate}
+\item $4xy \, \mathbf{a}_x + 6yz \, \mathbf{a}_y + 8zx \, \mathbf{a}_z$
+\item $4 \, \mathbf{a}_x + 6 \, \mathbf{a}_y + 8 \, \mathbf{a}_z$
+\item $\brak{4xy + 4z^2} \mathbf{a}_x + \brak{2x^2 + 6yz} \mathbf{a}_y + \brak{3y^2 + 8zx} \mathbf{a}_z$
+\item $0$
+\end{enumerate}
+\item In the feedback network shown below, if the feedback factor $k$ is increased, then the
+\begin{figure}[!ht]
+\centering
+\resizebox{0.6\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (8.75,17) rectangle (11.75,15.25);
+\draw  (8.75,13.25) rectangle (11.75,11.5);
+\draw (8.75,16.75) to[short, -o] (5.5,16.75) ;
+\draw (6,15.75) to[short, -o] (5.5,15.75) ;
+\draw (6,15.75) to[short] (6,11.75);
+\draw (6,11.75) to[short] (8.75,11.75);
+\draw (8.75,15.75) to[short] (8.25,15.75);
+\draw (8.25,15.75) to[short] (8.25,13);
+\draw (8.25,13) to[short] (8.75,13);
+\draw (11.75,16.75) to[short, -o] (13.75,16.75) ;
+\draw (11.75,15.75) to[short, -o] (13.75,15.75) ;
+\draw (11.75,13) to[short] (12.5,13);
+\draw (12.5,13) to[short] (12.5,16.75);
+\draw (13,15.75) to[short] (13,11.75);
+\draw (11.75,11.75) to[short] (13,11.75);
+\node [font=\normalsize] at (13.75,16.25) {$V_{out}$};
+\node [font=\normalsize] at (6.25,16.25) {$V_{in}$};
+\node [font=\normalsize] at (5.5,16.5) {+};
+\node [font=\normalsize] at (8.5,16.5) {+};
+\node [font=\normalsize] at (12,12.75) {+};
+\node [font=\normalsize] at (8.5,12.75) {+};
+\node [font=\normalsize] at (12,16.5) {+};
+\node [font=\LARGE] at (5.5,16) {-};
+\node [font=\LARGE] at (8.5,12) {-};
+\node [font=\LARGE] at (12,12) {-};
+\node [font=\LARGE] at (8.5,16) {-};
+\node [font=\LARGE] at (12,16) {-};
+\node [font=\normalsize] at (8,16.25) {$V_1$};
+\node [font=\normalsize] at (7.5,12.25) {$V_f = kV_{out}$};
+\node [font=\normalsize] at (10.25,16.25) {$A_0$};
+\node [font=\normalsize] at (10,12.5) {$k$};
+\end{circuitikz}
+}%
+\label{fig:my_label}
+\end{figure}
+\begin{enumerate}
+\item[(A)] input impedance increases and output impedance decreases.
+\item[(B)] input impedance increases and output impedance also increases.
+\item[(C)] input impedance decreases and output impedance also decreases.
+\item[(D)] input impedance decreases and output impedance increases.
+\end{enumerate}
+\end{enumerate}
+\end{document}      
