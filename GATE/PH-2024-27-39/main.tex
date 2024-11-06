@@ -1,0 +1,166 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{PH-2024-27-39}
+\author{EE24BTECH11036 - Krishna Patil}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}
+\setcounter{enumi}{26}
+\item The temperature dependence of the electrical conductivity $\brak{\sigma}$ of three intrinsic semiconductors $ A$ ,$B$ and $C$ is shown in the figure.
+\begin{figure}[!ht]
+\centering
+\resizebox{0.6\textwidth}{!}{
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [->, >=Stealth] (7.75,11.25) -- (7.75,17);
+\draw [->, >=Stealth] (7,12) -- (14.75,12);
+\draw [short] (8.5,15.25) -- (10,12.75);
+\draw [short] (9.25,15.25) -- (11.5,12.75);
+\draw [short] (10.25,15.25) -- (13,13.5);
+\node [font=\normalsize] at (9.5,12.75) {A};
+\node [font=\normalsize] at (11,12.75) {C};
+\node [font=\normalsize] at (12.75,13.25) {B};
+\node [font=\normalsize] at (6.75,14.5) {$\ln\brak{\sigma}$};
+\node [font=\normalsize] at (14.25,11.5) {$T^{-1}$};
+\end{circuitikz}
+}
+\label{fig:my_label}
+\end{figure}
+Let $E_a$,$E_b$ and $E_c$ be the bandgaps of $A$,$B$ and $C$ respectively . Which one of the following relations are correct ? 
+\begin{enumerate}
+\item $E_c>E_a>E_b$
+\item $E_b>E_c>E_a$ 
+\item $E_a>E_b>E_c$
+\item $E_a>E_c>E_b$
+\end{enumerate}
+\item Following trial waveforms \begin{center} $\phi_1 =e^{Z^{\prime}\brak{r_1+r_2}}$ \end{center}  and \begin{center} $\phi_2 =e^{Z^{\prime}\brak{r_1+r_2}}\brak{1+g\abs{\overrightarrow{r_1}-\overrightarrow{r_2}}}$ \end{center} are used to get a variational estimate of the ground state energy of helium atom. $Z^{\prime}$ and g are variational parameters , $\overrightarrow{r_1}$ and $\overrightarrow{r_2}$ are position vectors of the electrons. Let $E_0$ be the exact ground state energy of helium atom. $E_1$ and $E_2$ are the variational estimates of the ground state energy of the helium atom corresponding to $\phi_1$ and $\phi_2$ respectively .Which one of the following options is true ?
+\begin{enumerate}
+\item $E_1 \leq E_0 , E_2 \leq E_0 , E_1 \geq E_2$ 
+\item $E_1 \geq E_0 , E_2 \leq E_0 , E_1 \geq E_2$ 
+\item $E_1 \leq E_0 , E_2 \geq E_0 , E_1 \leq E_2 $
+\item $E_1 \geq E_0 , E_2 \geq E_0 , E_1 \geq E_2 $
+\end{enumerate} 
+\newpage
+\item The wave function for a particle is given by the form  $e^{\brak{i \alpha x + \beta t}}$ , where  $\alpha$  and  $\beta$ are real constants. In which one of the following potentials $V(x)$ , the particle is moving?
+\begin{enumerate}
+\begin{multicols}{2}
+\item $V\brak{x} \propto \alpha x^2 $
+\item $V\brak{x} \propto e^{\brak{-\alpha x}} $
+\item $V\brak{x} = 0 $
+\item $V\brak{x} \propto \sin\alpha x$ 
+\end{multicols}
+\end{enumerate}
+\item  Consider a volume integral
+\begin{center}
+$I = \int_V v^2 \left( \frac{1}{r} \right) dV$
+\end{center}
+over a volume $V$, where $r = \sqrt{x^2 + y^2 + z^2}$. Which of the following statements is/are correct?
+\begin{enumerate}
+\item $I = -4\pi$ , if $r = 0$ is inside the volume $V$ 
+\item Integrand vanishes for $r \neq 0$ 
+\item $I = 0$, if $r = 0$ is not inside the volume $V$ 
+\item Integrand diverges as $r \to \infty$ 
+\end{enumerate}
+\item The complex function
+\begin{center}
+  $e^{-\frac{2}{z - 1}}$  
+\end{center}
+has
+\begin{enumerate}
+\begin{multicols}{2}
+    \item[(A)] a simple pole at \( z = 1 \)
+    \item[(B)] an essential singularity at \( z = 1 \)
+    \item[(C)] a residue equal to \( -2 \) at \( z = 1 \)
+    \item[(D)] a branch point at \( z = 1 \)
+\end{multicols} 
+\end{enumerate}
+\item The minimum number of basic logic gates required to realize the Boolean expression $B \cdot\brak{A+B}+A\cdot\brak{\overline{B}+A}$  is \underline{\hspace{2cm}} (in integer).\\
+\item The vapor pressure $\brak{P}$ of solid ammonia is given by $\ln{\brak{p}}=23.03-\frac{3754}{T}$,while that of liquid ammonia is given by $\ln{\brak{p}}=29.49-\frac{3063}{T}$,where $T$ is the temperature in $K$.The temperature of the triple point of ammonia is \rule{2cm}{0.4pt} $K$\brak{rounded\quad off \quad to \quad two \quad decimal \quad places}. \\
+\item The electric field in a region depends only on $x$ and $y$ coordinates as
+\begin{center}
+ $E = k\frac{x\hat{x}+y\hat{y}}{x^2 + y^2}$   
+\end{center}
+where $k$ is a constant. The flux of $E$ through the surface of a sphere of radius $R$ with its center at the origin is $n \pi k R$, where the value of $n$ is \underline{\hspace{1cm}} (in integer).\\
+\item The Hamiltonian of a system of $N$ particles in volume $V$ at temperature $T$ is
+\begin{center}
+$H = \sum_{i=1}^{2N} a_i q_i^2 + \sum_{i=1}^{2N} b_i p_i^2$
+\end{center}
+where $a_i$ and $b_i$ are positive constants. The ensemble average of the Hamiltonian is $\alpha N k_B T$, where $k_B$ is the Boltzmann constant. The value of $\alpha$ is \underline{\hspace{1cm}} (in integer).
+\newpage
+\item Binding energy and rest mass energy of a two-nucleon bound state are denoted by $ B$  and  $mc^2$, respectively, where $c$ is the speed of light. The minimum energy of a photon required to dissociate the bound state is
+\begin{enumerate}
+\item B
+\item $B\brak{ 1 + \frac{B}{2mc^2}}$
+\item $B\brak{1 - \frac{B}{2mc^2}}$
+\item $B-mc^2$
+\end{enumerate}
+\item The spin-orbit interaction in a hydrogen-like atom is given by the Hamiltonian
+\begin{center}
+ $H^{\prime} = -k\overrightarrow{L}\cdot\overrightarrow{S} $  
+\end{center}
+where $k$  is a real constant. The splitting between levels $^2p_{\frac{3}{2}}$ and $^2p_{\frac{1}{2}}$ due to this interaction is:
+\begin{enumerate}
+	\item $\frac{1}{2}k{\hbar}^2$ 
+	\item $\frac{3}{2}k{\hbar}^2$ 
+	\item $\frac{3}{4}k{\hbar^2}^2$ 
+	\item $2k{\hbar}^2$
+\end{enumerate}
+\item Consider the Lagrangian $L=m\dot{x}\dot{y}-m\omega_0^2xy$. If $p_x$ and $p_y$ denote the generalized momenta conjugate to $x$ and $y$, respectively, then the canonical equations of motion are:
+\begin{enumerate}
+\item $\dot{x}=\frac{p_x}{m},\dot{p_x}=-m\omega_0^2x,\dot{y}=\frac{p_y}{m},\dot{p_y}=-m\omega_0^2y$
+\item $\dot{x} = \frac{p_x}{m},\dot{p_x}=m\omega_0^2x,\dot{y}=\frac{p_y}{m},\dot{p_y}=m\omega_0^2y$
+\item $\dot{x}=\frac{p_y}{m},\dot{p_x}=-m\omega_0^2 y,\dot{y}=\frac{p_x}{m},\dot{p_y}=-m\omega_0^2x$
+\item $\dot{x}=\frac{p_y}{m},\dot{p_x}=m\omega_0^2y,\dot{y}=\frac{p_x}{m},\dot{p_y}=m\omega_0^2 x$
+\end{enumerate}
+\item The X-ray diffraction pattern of a monoatomic cubic crystal with rigid spherical atoms of radius $1.56A^{\circ}$ shows several Bragg reflections of which the reflection appearing at the lowest $2\theta$ value is from \brak{111} plane .If the wavelength of X-ray used is $0.78A^{\circ}$ ,the Bragg angle $\brak{in 2\theta , \text{rounding off to one decimal place}}$ corresponding to this reflection and the crystal structure ,respectively,are
+\begin{enumerate}
+\item $21.6^{\circ}$ and Body centered cubic
+\item $17.6^{\circ}$ and face centered cubic
+\item $10.8^{\circ}$ and Body centered cubic
+\item $8.8^{\circ}$ and face centered cubic
+\end{enumerate}
+\end{enumerate}
+\end{document}      
