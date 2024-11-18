@@ -112,22 +112,14 @@ int main() {
     double complex eigenvalues[size_limit];
     int n;
 
-    // Get input from the user
     Input_Matrix(A, &n);
-
-    // Print the input matrix
     printf("Input Matrix:\n");
     Output_Matrix(A, n);
-
-    // Calculate eigenvalues using QR decomposition
     Eigenvalues(A, n, eigenvalues);
-
-    // Print the eigenvalues
     printf("Eigenvalues(if a+ib is the eigenvalue then the answer is (a,b) ):\n");
     for (int i = 0; i < n; i++) {
         printf("(%f, %f)\n", creal(eigenvalues[i]), cimag(eigenvalues[i]));
     }
-
     return 0;
 }
 
